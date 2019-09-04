@@ -40,7 +40,7 @@ export default {
         method:'post',
         data:this.loginForm
       })
-      console.log(res)
+      // console.log(res)
       this.$store.commit('user/setUserInfo',res.data)
       // console.log(this.$store.state)
       this.$message.success('登录成功')

@@ -9,6 +9,7 @@
           @click="handleClick(index)">{{item}}</span>
         </el-row>
         <LoginForm v-if="current===0"></LoginForm>
+        <RegisterForm v-if="current===1"></RegisterForm>
       </div>
     </el-row>
   </div>
@@ -16,9 +17,12 @@
 
 <script>
 import LoginForm from "@/components/user/loginForm";
+import RegisterForm from "@/components/user/registerForm";
+
 export default {
   components: {
-    LoginForm
+    LoginForm,
+    RegisterForm
   },
   data() {
     return {

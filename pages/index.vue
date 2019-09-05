@@ -54,7 +54,7 @@ export default {
     let res = await this.$axios({
       url: "/scenics/banners"
     });
-    console.log(res);
+    // console.log(res);
     this.banners = res.data.data;
   },
   methods: {
